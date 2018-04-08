@@ -1,0 +1,25 @@
+def countDuplicates(numbers)
+  # Write your code here.
+  ret = numbers.select{ |e| numbers.count(e) > 1 }.uniq
+  return ret.length
+end
+
+
+fp = File.open(ENV['OUTPUT_PATH'], 'w')
+
+numbers_cnt = gets.to_i
+numbers = Array.new(numbers_cnt)
+
+numbers_cnt.times do |numbers_i|
+  numbers_item = gets.to_i
+  numbers[numbers_i] = (numbers_item)
+
+end
+
+res = countDuplicates numbers
+
+fp.write res
+fp.write "\n"
+
+fp.close()
+

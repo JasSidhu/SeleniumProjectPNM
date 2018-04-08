@@ -1,0 +1,22 @@
+p = 0
+a = 0
+pa = 0
+for i in 1..100
+  if (i%3)==0 and (i%5)==0
+    puts "ParnaazAsreet"
+    pa += 1
+  elsif (i%3)==0
+    puts "Parnaaz"
+    p += 1
+  elsif (i%5)==0
+    puts "Asreet"
+    a += 1
+  else
+    puts i
+  end
+end
+
+puts "Total Parnaaz's = #{p}"
+puts "Total Asreet's = #{a}"
+puts "Total Parnaaz+Asreet's = #{pa}"
+

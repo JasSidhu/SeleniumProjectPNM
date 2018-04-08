@@ -1,0 +1,24 @@
+
+i = 1
+last = 150
+
+until i > last do
+  if (i%3)==0 and (i%5)==0 and (i%7)==0
+    puts "FooBarZap"
+  elsif (i%3)==0 and (i%7)==0
+    puts "FooZap"
+  elsif (i%3)==0 and (i%5)==0
+    puts "FooBar"
+  elsif (i%3)==0
+    puts "Foo"
+  elsif (i%5)==0
+    puts "Bar"
+  elsif (i%7)==0
+    puts "Zap"
+  else
+    puts i
+  end
+  i = i+1;
+end
+
+

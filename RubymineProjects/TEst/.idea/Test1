@@ -1,0 +1,15 @@
+def getMissingNo(arry)
+
+  n = arry.length
+  sortarry = arry.sory {|x,y| (x <=> y)}
+  for i in 0..n-1
+    puts sortarry[i]
+    if (sortarry[i]-sortarry[i-1])>1
+      #puts 1.to_i
+
+    end
+  end
+
+end
+
+arry = [1, 2, 4, 6, 3, 7, 8]
